@@ -11,6 +11,8 @@ import Reviews from "./pages/Reviews";
 import Chat from "./pages/Chat";
 import Followers from "./pages/Followers";
 import Navbar from "./components/Navbar";
+import Register from "./components/Register";
+import Login from "./components/Login";
 
 const App = () => {
   return (
@@ -26,10 +28,11 @@ const App = () => {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/followers" element={<Followers />} />
+        <Route path="/register" component={Register} />
+        <Route path="/login" component={Login} />
       </Routes>
     </Router>
   );
 };
 
 export default App;
-
